@@ -84,7 +84,7 @@ class Tests(unittest.TestCase):
         mock_file().write.assert_any_call("handicape,20,40\n")
         mock_file().write.assert_any_call("total,100,200\n")
     
-     # Test de csv_infra
+    # Test de csv_infra
     @patch("builtins.open", new_callable=mock_open)
     def test_csv_infra(self, mock_file):
         nombre_vehicules = 5
